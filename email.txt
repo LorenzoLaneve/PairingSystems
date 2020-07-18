@@ -1,0 +1,15 @@
+!sigma: A @ .
+
+!gamma: A @ . L R D E
+
+!rules:
+[A, @ -> L]
+[A, L -> L]
+[L, A -> R]
+[R, A -> R]
+[R, . -> D]
+[D, A -> E]
+[E, A -> E]
+.
+
+!accept: E

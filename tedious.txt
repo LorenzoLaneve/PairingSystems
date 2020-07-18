@@ -1,0 +1,22 @@
+!sigma: a c
+
+!gamma: a c E F G M T U X Y Z
+
+!rules:
+[c, a -> E]
+[E, c -> F]
+[F, c -> G]
+
+[E, G -> T]
+[G, T -> T] # T = G*EG
+[c, T -> U]
+[c, U -> X] # X = ccT = ccG*EG
+
+[G, F -> F]
+[c, F -> M] # M = cG*F
+
+[X, M -> Y]
+[G, M -> Z]
+.
+
+!accept: X Y Z G

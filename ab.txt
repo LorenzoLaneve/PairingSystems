@@ -1,0 +1,11 @@
+!sigma: a b c
+
+!gamma: a b c X R
+
+!rules:
+[a, b -> X]
+[a, X -> R]
+[R, b -> X]
+.
+
+!accept: X .
